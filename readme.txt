@@ -10,7 +10,7 @@ A simple FoaF feed for all blog users
 
 == Description ==
 
-A simple FoaF feed for all blog users based on the work of [wasab.dk](http://www.wasab.dk/morten/blog/archives/2004/07/05/wordpress-plugin-foaf-output)
+A simple FoaF feed for all blog users, based on the work of [wasab.dk](http://www.wasab.dk/morten/blog/archives/2004/07/05/wordpress-plugin-foaf-output)
 
 == Installation ==
 
