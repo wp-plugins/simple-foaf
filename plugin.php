@@ -3,7 +3,7 @@
 Plugin Name: SimpleFOAF
 Plugin URI: http://notizblog.org/
 Description: Personal profile page with friends (XFN) and interests, FOAF RDF/XML profile, and extended RSS (1.0) output.
-Version: 0.1
+Version: 0.1.1
 Author: Matthias Pfefferle
 Author URI: http://notizblog.org/
 */
