@@ -1,4 +1,4 @@
-=== Enable oEmbed Discovery ===
+=== FoaF ===
 Contributors: pfefferle
 Donate link: http://14101978.de/
 Tags: foaf, feed, xml
