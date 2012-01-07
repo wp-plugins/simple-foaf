@@ -2,9 +2,9 @@
 Contributors: pfefferle
 Donate link: http://14101978.de/
 Tags: foaf, feed, xml
-Requires at least: 3.2.1
-Tested up to: 3.2.1
-Stable tag: 0.1.1
+Requires at least: 3.0
+Tested up to: 3.3.1
+Stable tag: 0.1.1.1
 
 A simple FoaF feed for all blog users
 
@@ -18,6 +18,8 @@ A simple FoaF feed for all blog users, based on the work of [wasab.dk](http://ww
 * Activate it at the admin interface
 
 == ChangeLog ==
+= Version 0.1.1.1 =
+* flush rewrite-rules on activation
 = Version 0.1.1 =
 * some text fixes
 = Version 0.1 =
