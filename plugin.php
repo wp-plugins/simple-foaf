@@ -2,8 +2,8 @@
 /*
 Plugin Name: SimpleFOAF
 Plugin URI: http://notizblog.org/
-Description: Personal profile page with friends (XFN) and interests, FOAF RDF/XML profile, and extended RSS (1.0) output.
-Version: 0.1.1
+Description: FOAF RDF/XML profile.
+Version: 0.1.1.1
 Author: Matthias Pfefferle
 Author URI: http://notizblog.org/
 */
@@ -20,12 +20,23 @@ add_filter('webfinger', array('SimpleFoaf', 'add_webfinger_info'), 10, 2);
 add_action('do_feed_foaf', array('SimpleFoaf', 'do_feed_foaf'));
 add_action('init', array('SimpleFoaf', 'init'));
 
+register_activation_hook(__FILE__, array('SimpleFoaf', 'flush_rewrite_rules'));
+register_deactivation_hook(__FILE__, array('SimpleFoaf', 'flush_rewrite_rules'));
+
 class SimpleFoaf {
   /**
    * init function
    */
   function init() {
     add_feed('foaf', array('SimpleFoaf', 'do_feed_foaf'));
+  }
+  
+  /**
+   * reset rewrite rules
+   */
+  function flush_rewrite_rules() {
+    global $wp_rewrite;
+    $wp_rewrite->flush_rules();
   }
   
   /**
